@@ -306,3 +306,9 @@ git push origin minima
 ### 3.3 报错
 
 ![喜欢模板](../..//assets/posts/2020-08-20-github page的打造过程.assets/github_action_error.png)
+
+![喜欢模板](../..//assets/posts/2020-08-20-github page的打造过程.assets/部署步骤.png)
+
+开一个干净的仓库，按照README中的步骤一步一步来。无奈～
+
+![喜欢模板](../..//assets/posts/2020-08-20-github page的打造过程.assets/github_action_no_error.png)
