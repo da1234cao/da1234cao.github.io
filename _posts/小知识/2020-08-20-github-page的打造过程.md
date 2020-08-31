@@ -1,7 +1,7 @@
 ---
 title: github page的搭建过程
 author: 大草
-date: 2019-08-08 11:33:00 +0800
+date: 2020-08-20 11:33:00 +0800
 categories: [小知识]
 tags: [github page]
 math: true
