@@ -80,6 +80,21 @@ npm install hexo-deployer-git --save
 
 ### 多机同步
 
+master分支用于展示网页。doc分支用于存储内容。
+
+每次操作之前同步doc，操作结束之后，重新生成并`hexo generate`更新master。
+
+A主机操作：
+
+```shell
+$ git init
+$ git checkout -b doc 
+$ git add .
+$ git commit -m "create a new branch for coordination among multiple devices" 
+$ git remote add origin git@github.com:da1234cao/da1234cao.github.io.git
+$ git push origin doc 
+```
+
 
 
 <br>
