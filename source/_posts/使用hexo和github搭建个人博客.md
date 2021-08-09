@@ -95,6 +95,33 @@ $ git remote add origin git@github.com:da1234cao/da1234cao.github.io.git
 $ git push origin doc 
 ```
 
+在电脑B处拉取分支doc，做更新博客操作，先需搭建环境：
+
+```shell
+$ git clone -b doc https://github.com/username/username.github.io.git
+$ cd username.github.io
+$ npm install # 安装依赖
+```
+
+此后就可以在电脑B上编辑更新博文了。
+
+第五步：编译博客，将静态文件发布到主分支 **master** 上，源文件提交到分支 **doc** 上：
+
+```shell
+$ hexo clean && hexo g && hexo d
+$ git add .
+$ git commit -m "message"  # 源文件提交到hexo分支上面
+$ git pull origin hexo     # 先拉取原来GitHub的hexo分支上的源文件到本地，进行合并
+$ git push origin hexo     # 比较解决前后版本冲突后，push源文件到GitHub的hexo分支
+```
+
+第六步：再次回到电脑A进行博文编辑工作，同步hexo分支源文件到本地，进行合并：
+
+```shell
+$ git pull origin hexo
+# 写好博文，重复操作第五步
+```
+
 
 
 <br>
