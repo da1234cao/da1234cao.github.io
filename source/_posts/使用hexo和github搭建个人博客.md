@@ -111,8 +111,8 @@ $ npm install # 安装依赖
 $ hexo clean && hexo g && hexo d
 $ git add .
 $ git commit -m "message"  # 源文件提交到hexo分支上面
-$ git pull origin hexo     # 先拉取原来GitHub的hexo分支上的源文件到本地，进行合并
-$ git push origin hexo     # 比较解决前后版本冲突后，push源文件到GitHub的hexo分支
+$ git pull origin doc     # 先拉取原来GitHub的doc分支上的源文件到本地，进行合并
+$ git push origin doc     # 比较解决前后版本冲突后，push源文件到GitHub的doc分支
 ```
 
 第六步：再次回到电脑A进行博文编辑工作，同步hexo分支源文件到本地，进行合并：
