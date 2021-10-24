@@ -122,7 +122,17 @@ $ git pull origin hexo
 # 写好博文，重复操作第五步
 ```
 
+## 文档插入图片
 
+我不喜欢图床。我喜欢图片和文档在一个地方存储。参考：[Hexo博客搭建之在文章中插入图片](https://yanyinhong.github.io/2017/05/02/How-to-insert-image-in-hexo-post/)
+
+绝对路径：可以将图片统一放在source/images文件夹中，通过markdown语法访问它们。
+
+```shell
+![](/images/image.jpg)
+```
+
+![喵喵](/images/使用hexo和github搭建个人博客/hexo_page_image.jpeg)
 
 <br>
 
