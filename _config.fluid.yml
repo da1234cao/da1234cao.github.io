@@ -105,3 +105,14 @@ deploy:
     type: git
     repo: git@github.com:da1234cao/da1234cao.github.io.git
     branch: master
+
+post:
+  comments:
+    enable: true
+    type: utterances
+
+utterances:
+  repo: da1234cao/da1234cao.github.io
+  issue-term: title
+  theme: github-light
+  crossorigin: anonymous

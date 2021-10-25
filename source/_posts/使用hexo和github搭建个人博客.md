@@ -134,7 +134,22 @@ $ git pull origin hexo
 
 ![喵喵](/images/使用hexo和github搭建个人博客/hexo_page_image.jpeg)
 
-<br>
+## 添加评论功能
+
+参考：[给博客增加评论功能](https://drinkwd.github.io/2021/02/22/%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/)，我们给博客添加评论功能。
+
+```shell
+post:
+  comments:
+    enable: true
+    type: utterances
+
+utterances:
+  repo: da1234cao/da1234cao.github.io
+  issue-term: title
+  theme: github-light
+  crossorigin: anonymous
+```
 
 ## 写博客
 
