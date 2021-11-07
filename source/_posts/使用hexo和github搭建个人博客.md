@@ -151,6 +151,21 @@ utterances:
   crossorigin: anonymous
 ```
 
+## 给文章加密
+
+参考：[Hexo-blog-encrypt，给博客文章加密](https://xsin.gitee.io/2019/01/11/hexo-blog-encrypt/)
+
+`npm install --save hexo-blog-encrypt`
+
+修改`_config.yml`。
+
+```shell
+# Security
+##
+encrypt:
+    enable: true
+```
+
 ## 写博客
 
 避免我忘记，这里记录下。

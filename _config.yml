@@ -116,3 +116,8 @@ utterances:
   issue-term: title
   theme: github-light
   crossorigin: anonymous
+
+# Security
+##
+encrypt:
+    enable: true
