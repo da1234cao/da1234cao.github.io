@@ -105,6 +105,8 @@ deploy:
     type: git
     repo: git@github.com:da1234cao/da1234cao.github.io.git
     branch: master
+    name: da1234cao
+    email: 17355051286@163.com
 
 post:
   comments:
