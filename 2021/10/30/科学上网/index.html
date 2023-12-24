@@ -24,7 +24,7 @@
 <meta property="og:description" content="搭建v2ray服务以科学上网">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-30T11:52:00.000Z">
-<meta property="article:modified_time" content="2023-05-01T08:33:36.157Z">
+<meta property="article:modified_time" content="2023-12-24T08:11:55.961Z">
 <meta property="article:author" content="大草">
 <meta property="article:tag" content="v2ray">
 <meta name="twitter:card" content="summary_large_image">
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.3k 字
+      696 字
     </span>
   
 
@@ -205,7 +205,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      2 分钟
     </span>
   
 
@@ -237,27 +237,17 @@
             <h1 style="display: none">搭建v2ray服务以科学上网</h1>
             
             <div class="markdown-body">
-              <h2 id="了解背景"><a href="#了解背景" class="headerlink" title="了解背景"></a>了解背景</h2><p><a target="_blank" rel="noopener" href="https://github.com/vpncn/vpncn.github.io">翻墙软件VPN推荐，中国仅2款好用</a>、<a target="_blank" rel="noopener" href="https://vpsda.github.io/">2021便宜好用的VPS推荐，美国香港VPS避坑攻略</a>、<a target="_blank" rel="noopener" href="https://gcorelabs.com/about/">gcorelabs服务商</a></p>
-<h2 id="配置主机"><a href="#配置主机" class="headerlink" title="配置主机"></a>配置主机</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_38816924/article/details/120561158">ssh服务配置</a></p>
-<h2 id="v2ray服务器端搭建"><a href="#v2ray服务器端搭建" class="headerlink" title="v2ray服务器端搭建"></a>v2ray服务器端搭建</h2><p><a target="_blank" rel="noopener" href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">V2Ray一键安装脚本</a></p>
-<h2 id="v2ray客户端安装"><a href="#v2ray客户端安装" class="headerlink" title="v2ray客户端安装"></a>v2ray客户端安装</h2><p>windows&#x2F;linux：<a target="_blank" rel="noopener" href="https://qv2ray.net/getting-started/">Qv2ray</a></p>
+              <h1 id="了解背景"><a href="#了解背景" class="headerlink" title="了解背景"></a>了解背景</h1><p><a target="_blank" rel="noopener" href="https://github.com/vpncn/vpncn.github.io">翻墙软件VPN推荐，中国仅2款好用</a>、<a target="_blank" rel="noopener" href="https://vpsda.github.io/">2021便宜好用的VPS推荐，美国香港VPS避坑攻略</a>、<a target="_blank" rel="noopener" href="https://gcorelabs.com/about/">gcorelabs服务商</a></p>
+<p>我使用<a target="_blank" rel="noopener" href="https://www.vultr.com/zh/">vultr</a>。按小时收费的。如果开出一台服务器的ip是被屏蔽的，重新开一台就好。</p>
+<h1 id="配置主机"><a href="#配置主机" class="headerlink" title="配置主机"></a>配置主机</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_38816924/article/details/120561158">ssh服务配置</a></p>
+<h1 id="v2ray"><a href="#v2ray" class="headerlink" title="v2ray"></a>v2ray</h1><h2 id="v2ray服务器端搭建"><a href="#v2ray服务器端搭建" class="headerlink" title="v2ray服务器端搭建"></a>v2ray服务器端搭建</h2><p><a target="_blank" rel="noopener" href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">V2Ray一键安装脚本</a></p>
+<h2 id="v2ray客户端安装"><a href="#v2ray客户端安装" class="headerlink" title="v2ray客户端安装"></a>v2ray客户端安装</h2><p>ref: <a target="_blank" rel="noopener" href="https://www.v2ray.com/awesome/tools.html">v2ray客户端-列表</a></p>
+<p>windows: v2rayN</p>
+<p>linux: <a target="_blank" rel="noopener" href="https://v2raya.org/docs/prologue/quick-start/">v2raya</a></p>
 <p>安卓：<a target="_blank" rel="noopener" href="https://github.com/eycorsican/kitsunebi-android">Kitsunebi</a></p>
 <p>ipad：<a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/kitsunebi-proxy-utility/id1446584073">Kitsunebi</a></p>
-<h2 id="问题处理1"><a href="#问题处理1" class="headerlink" title="问题处理1"></a>问题处理1</h2><p>突然有天，梯子的Ipv4不能走代理，Ipv6还可以走代理。</p>
-<p>测试了下IP没有被封。端口也正常。不知道为啥子。</p>
-<p>干脆换下端口试试。好家伙，试试就逝世。这些IPv6也没法正常用了。</p>
-<p>没了google，使用必应上网搜搜，总算解决了问题。我不知道为什么是这样解决，但它确实解决了问题。</p>
-<p>解决方法：<a target="_blank" rel="noopener" href="https://github.com/v2ray/v2ray-core/issues/2966">app&#x2F;proxyman&#x2F;inbound: connection ends &gt; proxy&#x2F;vmess&#x2F;inbound: invalid request from</a>、<a target="_blank" rel="noopener" href="https://github.com/233boy/v2ray/issues/812"> proxy&#x2F;vmess&#x2F;encoding: invalid user</a></p>
-<p>第一步：change AlterID to 0 for file &#x2F;usr&#x2F;local&#x2F;etc&#x2F;v2ray&#x2F;config.json in server and client.</p>
-<p>第二步：&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;v2ray.service中新加了一行Environment&#x3D;”V2RAY_VMESS_AEAD_FORCED&#x3D;false”。</p>
-<p>第三步重启： systemctl daemon-reload; systemctl restart v2ray</p>
-<h2 id="问题处理2"><a href="#问题处理2" class="headerlink" title="问题处理2"></a>问题处理2</h2><p>ip被封了，又租了台新的，但是租住之后才知道新租的服务器ip也是被屏蔽的。没租之前，ip没有对应的系统，无法知道是否被屏蔽，白白花钱。</p>
-<p>所以，我切换使用<a target="_blank" rel="noopener" href="https://www.vultr.com/zh/">vultr</a>。按小时收费的。如果开出一台服务器的ip是被屏蔽的，重新开一台就好。</p>
-<p>所以，我按照上面一样搭建服务。但是搭建起来的服务，非常非常难用，经常无法访问。</p>
-<p>我查看了客户端的日志，没有发现问题。我抓取客户端的数据包，可以看到客户端在不停的重传数据，虽然服务端的access.log里面已经显示收到客户端的请求。</p>
-<p>这就比较难办了。没有google，排查错误都很慢。后来看到<a target="_blank" rel="noopener" href="https://github.com/v2fly/v2ray-core/discussions/1383">2021年11月份开始V2Ray很难成功访问成功</a>,j将传输使用的tcp协议改成kcp协议，意外的好了。</p>
-<p>为什么好了，不知道，暂时能用了。迟早有天，我看下v2ray的源码。网络相关的代码是比较有意思的内容。</p>
-<h2 id="问题处理3"><a href="#问题处理3" class="headerlink" title="问题处理3"></a>问题处理3</h2><p>(ipv4+)端口被封，修复过程。</p>
+<p>windows&#x2F;linux：<a target="_blank" rel="noopener" href="https://qv2ray.net/getting-started/">Qv2ray</a> - 已不再维护</p>
+<h2 id="v2ray问题处理"><a href="#v2ray问题处理" class="headerlink" title="v2ray问题处理"></a>v2ray问题处理</h2><p>(ipv4+)端口被封，修复过程。</p>
 <ul>
 <li>ping 下 – 可以ping通；ip没有被封</li>
 <li>经测试，端口被封 – 修改服务端口</li>
@@ -268,7 +258,10 @@
 </ul>
 <h2 id="使用tls"><a href="#使用tls" class="headerlink" title="使用tls"></a>使用tls</h2><p>申请个免费域名：<a target="_blank" rel="noopener" href="https://www.freenom.com/">freenom</a></p>
 <p>配置个tls：<a target="_blank" rel="noopener" href="https://toutyrater.github.io/advanced/tls.html">v2ray-TLS</a></p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<h1 id="xui"><a href="#xui" class="headerlink" title="xui"></a>xui</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">下载安装脚本</span><br>wget https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">安装x-ui面板</span><br>sudo bash install.sh<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">设置开机自启</span><br>sudo x-ui enable<br></code></pre></td></tr></table></figure>
+
+<p>配置真的很简单。有UI，操作果然太舒服了。可以参考视频：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=peID0Nr41nc">X-UI面板搭建教程</a></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul>
 <li><a target="_blank" rel="noopener" href="https://www.toolsdaquan.com/ipcheck/">IP端口可用性在线检测工具</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/cljdsc/article/details/120832554">Ubuntu20.04 防火墙设置</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/linux-check-port-usage.html">Linux 查看端口占用情况</a></li>
@@ -318,8 +311,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/10/16/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E8%AF%AD%E5%BD%95-1/">
-                        <span class="hidden-mobile">毛泽东语录-1</span>
+                      <a href="/2021/08/04/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                        <span class="hidden-mobile">使用hexo+github搭建个人博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
